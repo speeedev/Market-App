@@ -13,7 +13,7 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   List <SettingsMenuManager> settingMenu = [SettingsMenuManager(name: "Hesap Ayarları"), SettingsMenuManager(name: "Geçmiş Siparişler"), SettingsMenuManager(name: "Çıkış")];
-  List <SettingsMenuManager> settingMenu2 = [SettingsMenuManager(name: "Hakkımızda"), SettingsMenuManager(name: "Gizlilik Sözleşmei")];
+  List <SettingsMenuManager> settingMenu2 = [SettingsMenuManager(name: "Hakkımızda"), SettingsMenuManager(name: "Gizlilik Sözleşmesi")];
   TemporaryHoldOfInformation _temporaryHoldOfInformation = Get.put(TemporaryHoldOfInformation());
   FirebaseFirestore _firestore = FirebaseFirestore.instance;
   FirebaseAuth _auth = FirebaseAuth.instance;
@@ -100,7 +100,12 @@ class _ProfilePageState extends State<ProfilePage> {
                   leading: Icon(Icons.person),
                   title: Text(settingMenu2[index].name, style: TextStyle(fontSize: 18, fontFamily: "Montserrat"),),
                   onTap: () {
-                    // Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryPage(category: Categories[index],)));
+                    if (settingMenu2[index].name == "Hakkımızda") {
+                    //  Get.to(AboutPage());
+                    }
+                    else if (settingMenu2[index].name == "Gizlilik Sözleşmesi") {
+                    //  Get.to(PrivacyPolicyPage());
+                    }
                   },
                 );
               },
