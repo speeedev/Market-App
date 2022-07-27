@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "278132220459",
+    "project_id": "market-cebimde",
+    "storage_bucket": "market-cebimde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278132220459:android:babb667b0ea1574f61406e",
+        "android_client_info": {
+          "package_name": "com.app.market.cebimde"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278132220459-2cb68jrej2r27dqgfdst13vsvbvikeur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5jksgHwFAqQPY411TGj2bvCFQGVy0oyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278132220459-2cb68jrej2r27dqgfdst13vsvbvikeur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
