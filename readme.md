@@ -1,3 +1,1 @@
-Color theme:
-
-Purple: Colors.blueAccent[700]
+![Market Yanımda Logo](https://github.com/emirybolat/Market-App/blob/master/assets/Logo.png)
